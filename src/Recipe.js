@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./App.css";
 const Recipe = ({ title, calories, image, ingredients }) => {
   return (
     <div>
@@ -10,8 +10,8 @@ const Recipe = ({ title, calories, image, ingredients }) => {
         ))}
       </ol>
 
-      <p>{calories}</p>
-      <img src={image} alt='' />
+      <p>Calories: {calories}</p>
+      <img className='img' src={image} alt='' />
     </div>
   );
 };

@@ -2,6 +2,13 @@
   min-height: 100vh;
   background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
 }
+.header {
+  width: 100%;
+  height: 40px;
+  background-image: linear-gradient(to top, #5ee7df 0%, #b490ca 100%);
+  padding-top: 20px;
+  text-align: center;
+}
 
 .search-form {
   min-height: 10vh;
@@ -24,10 +31,17 @@
   width: 10%;
   border-radius: 20px;
   margin-left: 10px;
+  height: 40px;
 }
 
 .recipes {
-  display: flex;
+  /* display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
+  flex-wrap: wrap; */
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 30px;
+}
+.img {
+  border-radius: 30px;
 }
